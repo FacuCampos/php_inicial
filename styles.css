@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+body {
+    background-color: beige;
+    padding: 90px 20px 20px 20px;
+}
+
+.navegador{
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+    background-color: brown;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navegador a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: 400;
+}
+
+.navegador a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+.navegador ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 2rem;
+}
+
+.form-contenedor {
+    width: 500px;
+    background-color: rgb(212, 180, 138);
+    margin: 0 auto;
+    padding: 15px;
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-contenedor form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contenedor form label{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.form-contenedor form input {
+    margin-bottom: 15px;
+}
+
+.form-contenedor form textarea {
+    margin-bottom: 15px;
+}
+
+.form-contenedor form .btn-agregar-tarea{
+    position: relative;
+    margin-bottom: 0;
+    width: min-content;
+    padding: 5px 10px;
+    align-self: end;
+
+    cursor: pointer;
+}
+
+.form-contenedor h3{
+    font-size: 2rem;
+    color: rgb(63, 63, 63);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.list-tareas-section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px 50px;
+}
+
+.list-tareas-section h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10%;
+}
+
+.tarjeta{
+    width: 100%;
+    min-height: 200px;
+    background-color: rgb(212, 180, 138);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta h3 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.tarjeta .tarjeta-descripcion{
+    position:relative;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+.tarjeta .tarjeta-fecha {
+    text-align: right;
+    font-size: 1.5rem;
+}
